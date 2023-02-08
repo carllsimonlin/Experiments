@@ -13,8 +13,10 @@ def calculate_tax(income):
         return 2202500 + (income - 8000000) * 0.35
 
 def compute_tax():
-    annual_income = float(input("Enter your annual income: "))
+    monthly_income = float(input("Enter your monthly income: "))
+    annual_income= monthly_income * 12
     tax = calculate_tax(annual_income)
+    print("Your annual income is", format(annual_income,'.2f'))
     print("Your annual tax is: ", format(tax,'.2f'))
     print("Your monthly tax is: ", format(tax/12,'.2f'))
 
