@@ -20,6 +20,6 @@ for i in range(chances):
         break
 # If the guess is correct, print the number of guesses and the correct number
 if guess == number:
-    print("You guessed the number in", i+1, " tries. The correct number is", number)
+    print("You guessed the number in", i+1,"tries. The correct number is", number)
 else:
     print("Sorry, you did not guess the number. The correct number was", number)
